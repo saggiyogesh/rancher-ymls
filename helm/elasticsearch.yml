@@ -1,0 +1,4 @@
+image: 'saggiyogesh/es-s3'
+imageTag: 'latest'
+keystore:
+  - secretName: s3
