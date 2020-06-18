@@ -1,3 +1,4 @@
+clusterName: "rancher2-es-apps"
 image: "saggiyogesh/es-s3"
 antiAffinity: "soft"
 esJavaOpts: "-Xmx128m -Xms128m"
