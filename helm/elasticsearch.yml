@@ -1,4 +1,13 @@
-image: 'saggiyogesh/es-s3'
-imageTag: 'latest'
+image: "saggiyogesh/es-s3"
+antiAffinity: "soft"
+esJavaOpts: "-Xmx128m -Xms128m"
+resources:
+  requests:
+    cpu: "100m"
+    memory: "128M"
+  limits:
+    cpu: "100m"
+    memory: "256M"
+imageTag: "latest"
 keystore:
   - secretName: s3
