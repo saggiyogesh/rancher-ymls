@@ -1,0 +1,8 @@
+controller: 
+    config: 
+      name: "nginx-ingress-config"
+      entries: 
+        client-max-body-size: 100m
+        proxy-connect-timeout: 600s
+        proxy-read-timeout: 600s
+        worker-connections: "8192"
