@@ -1,8 +1,17 @@
 controller: 
+    enableCustomResources: true
+    enableSnippets: true
     config: 
       name: "nginx-ingress-config"
       entries: 
         client-max-body-size: 100m
         proxy-connect-timeout: 600s
         proxy-read-timeout: 600s
+        proxy-next-upstream-tries: "3"
+        worker-rlimit-nofile: "65536"
         worker-connections: "8192"
+        keepalive: "32"
+        max-fails: "0" 
+        fail-timeout: "5s"
+        main-snippets: |
+          load_module modules/ngx_http_js_module.so;
