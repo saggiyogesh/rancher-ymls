@@ -5,7 +5,6 @@ controller:
       - name: extra-conf
         configMap:
           name: nginx-configs
-          
     volumeMounts:
       - name: extra-conf
         mountPath: /etc/nginx/extra-conf/
