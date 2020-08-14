@@ -1,6 +1,14 @@
 controller: 
     enableCustomResources: true
     enableSnippets: true
+    volumes:
+      - name: extra-conf
+        configMap:
+          name: nginx-configs
+          
+    volumeMounts:
+      - name: extra-conf
+        mountPath: /etc/nginx/extra-conf/
     config: 
       name: "nginx-ingress-config"
       entries: 
