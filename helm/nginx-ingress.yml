@@ -12,7 +12,7 @@ controller:
       name: "nginx-ingress-config"
       entries: 
         client-max-body-size: 100m
-        proxy-connect-timeout: 600s
+        proxy-connect-timeout: 75s
         proxy-read-timeout: 600s
         proxy_next_upstream: "error timeout non_idempotent http_503 http_504"
         proxy_next_upstream_timeout: "10s"
