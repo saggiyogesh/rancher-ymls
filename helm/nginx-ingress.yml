@@ -16,7 +16,7 @@ controller:
         proxy-read-timeout: 600s
         proxy_next_upstream: "error timeout non_idempotent http_503 http_504"
         proxy_next_upstream_timeout: "10s"
-        proxy-next-upstream-tries: "3"
+        proxy-next-upstream-tries: "10"
         worker-rlimit-nofile: "65536"
         worker-connections: "8192"
         keepalive: "32"
