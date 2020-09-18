@@ -6,9 +6,6 @@ resources:
   requests:
     cpu: "100m"
     memory: "512M"
-  limits:
-    cpu: "300m"
-    memory: "1G"
 imageTag: "latest"
 keystore:
   - secretName: s3
