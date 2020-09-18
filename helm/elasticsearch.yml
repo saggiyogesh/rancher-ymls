@@ -1,11 +1,11 @@
 clusterName: "rancher2-es-apps"
 image: "saggiyogesh/es-s3"
+imageTag: "7.8.1"
+keystore:
+  - secretName: s3
 antiAffinity: "soft"
 esJavaOpts: "-Xmx512m -Xms512m"
 resources:
   requests:
     cpu: "100m"
     memory: "512M"
-imageTag: "latest"
-keystore:
-  - secretName: s3
